@@ -22,12 +22,14 @@ export default function Layout({ children, home, calendar, title, description })
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>
             <Navbar
-                variant={"sticky"}
+                variant={"floating"}
                 shouldHideOnScroll
                 isBordered={isDark}
+                className={styles.navbar}
+                containerCss={"/layout.module.css"}
             >
                 <Navbar.Brand>
-                    <Link href={"/"}>
+                    <Link className={styles.link} href={"/"}>
                         <Avatar
                             priority
                             src="https://www.pngarts.com/files/4/Pokeball-Transparent.png"
@@ -41,7 +43,7 @@ export default function Layout({ children, home, calendar, title, description })
                     <Navbar.Link href="#">Features</Navbar.Link>
                     <Navbar.Link isActive href="#">Customers</Navbar.Link>
                     <Navbar.Link href="#">Pricing</Navbar.Link>
-                    <Navbar.Link href="#">Company</Navbar.Link>
+                    <Navbar.Link href="#deploy">Deploy</Navbar.Link>
                 </Navbar.Content>
                 <div className={styles.middletitle}>
                     <h1 className={styles.title}>{title}</h1>

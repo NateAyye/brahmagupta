@@ -1,3 +1,13 @@
+.link {
+  cursor: pointer !important;
+}
+
+
+
+.navbar {
+  background:linear-gradient(rgba(255, 0, 0, 0.85) 44%, rgba(70, 17, 17, 0.747) 70%, rgba(255, 255, 255, 0)) !important;
+}
+
 
 
 .container {
@@ -80,5 +90,6 @@
 }
 
 .borderCircle {
+  cursor: pointer !important;
   border-radius: 50%;
 }
