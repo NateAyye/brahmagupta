@@ -17,7 +17,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          Get by editing <code className={styles.code}>pages/index.js</code>
+          Get editing <code className={styles.code}>pages/index.js</code>
         </p>
 
         <div className={styles.grid}>
